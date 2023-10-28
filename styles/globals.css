@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    overflow-x: hidden;
+}
+
+
+.POST{
+  width: 600px;
+}
+
+.Do{
+  position: absolute;
+  right: 20px;
+}
+
+.btn{
+  @apply h-7 hover:scale-125 cursor-pointer  duration-150 ease-out;
+}
+
+.SLL{
+  position: fixed;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .POST{
+    width: 125%;
+    position: absolute;
+    scale: 2;
+    left:0;
+    right:200px;
+    top: 80%;
+    
+  }
+
+  .STOR{
+    scale: 2;
+    left: 75%;
+    top: 60%;
+  }
+
+  .Search{
+    position: absolute;
+    scale: 2;
+    top: 5%;
+    left: 175%;
+    outline: 1px solid grey;
+    border-radius: 10px;
+    width: 70%;
+    border: none;
+  }
+
+  .INSTA{
+    scale: 2.5;
+    left: 25%;
+    top: 20px;
+
+  }
+
+  .IN{
+    scale:3;
+    left: 2%;
+    top: 35px;
+  }
+
+  .SIDE{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: -10%;
+    height: 5%;
+    scale: 2;
+    gap: 90px;
+    margin-bottom: 20px;
+
+  
+  }
+
+  .H{
+    margin-left: 20px;
+  }
+
+  .S{
+    margin-left: 0;
+    left: 0;
+  }
+
+  .C{
+    scale: 1.5;
+  }
+
+  .SL{
+    scale: 0;
+  }
+}
