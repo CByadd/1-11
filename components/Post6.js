@@ -39,7 +39,7 @@ function Post({id,username,userImg,img,caption}) {
 <div>
   <p className='p-5 truncate text-white'>
     <span className='font-bold mr-4'>ISRO</span>
-         Ut enim laboris velit qui dolor consequat cupidatat amet dolore do.
+        This is MEGA project done by Holy Cross Mat. school With the Students Involves <br> Adithiyan, A R rehman, Kamalesh R, Srinivash R T.
   </p>
 </div>
 
